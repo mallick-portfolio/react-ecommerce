@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ProductCards.css";
 const ProductCard = ({ product }) => {
   return (
@@ -18,7 +19,9 @@ const ProductCard = ({ product }) => {
         </div>
         <div className="card-footer">
           <div className="d-flex justify-content-between">
-            <button className="btn btn-primary">Show Details</button>
+            <Link className="btn btn-primary" to={`/product/details`}>
+              Details
+            </Link>
             <button className="btn btn-info mx-1">Add To Cart</button>
           </div>
         </div>
