@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./ProductCards.css";
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, getId }) => {
   return (
     <div className="col">
       <div className="card h-100 product">
@@ -19,7 +19,11 @@ const ProductCard = ({ product }) => {
         </div>
         <div className="card-footer">
           <div className="d-flex justify-content-between">
-            <Link className="btn btn-primary" to={`/product/details`}>
+            <Link
+              onClick={() => getId(product.id)}
+              className="btn btn-primary"
+              to={`/product/details`}
+            >
               Details
             </Link>
             <button className="btn btn-info mx-1">Add To Cart</button>
