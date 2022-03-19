@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
         </div>
         <div className="card-footer">
           <div className="d-flex justify-content-between">
-            <button className="btn btn-primary mx-1">Show Details</button>
+            <button className="btn btn-primary">Show Details</button>
             <button className="btn btn-info mx-1">Add To Cart</button>
           </div>
         </div>
